@@ -173,6 +173,28 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
+.features-item::before {
+  height: 120px;
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url(../images/icon/feature/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icon/feature/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/feature/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/feature/astronaut.svg);
+}
 .features-h {
   margin-bottom: 10px;
 
