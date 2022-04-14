@@ -367,6 +367,43 @@ img {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+.foot-box {
+  display: flex;
+  align-items: baseline;
+}
+.foot-soc-icon {
+  padding-left: 70px;
+}
+.foot-soc-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.foot-icon-list {
+  display: flex;
+}
+.foot-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+.foot-icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.foot-icon-link:hover {
+  background-color: var(--brand-color);
+}
+
 /* Портфолио */
 
 .box-pro {
