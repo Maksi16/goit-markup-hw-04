@@ -233,7 +233,9 @@ img {
   text-align: center;
 }
 /* Секция команда */
-
+.team {
+  background-color: #f5f4fa;
+}
 .team-text {
   margin-bottom: 50px;
 
@@ -277,8 +279,6 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 32px 30px 32px;
-
-  outline: 1px solid tomato;
 }
 .master-soc-link {
   width: 44px;
@@ -288,16 +288,51 @@ img {
   align-items: center;
   border-radius: 50%;
   fill: #afb1b8;
-  /* background-color: teal; */
 }
-.master-soc-link:hover {
+.master-soc-link:hover,
+.master-soc-link:focus {
   fill: #fff;
   background-color: var(--brand-color);
 }
 .master-soc-item:not(:last-child):not(:last-child) {
   margin-right: 10px;
 }
+
+/* Клиенты */
+.clients {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-list {
+  display: flex;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+}
+
 /* Подвал сайта */
+
 .foot {
   padding: 60px 0;
 
