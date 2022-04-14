@@ -102,12 +102,33 @@ img {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 .contact-link {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
+}
+.contact-link:hover .icon-envelope,
+.contact-link:focus .icon-envelope,
+.contact-link:hover .icon-smartphone,
+.contact-link:focus .icon-smartphone {
+  fill: var(--brand-color);
 }
 .contact-link:hover,
 .contact-link:focus,
@@ -173,27 +194,12 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-item::before {
+.features-icon {
+  width: 270px;
   height: 120px;
-  content: '';
-  display: block;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-antenna::before {
-  background-image: url(../images/icon/feature/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/icon/feature/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/icon/feature/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/icon/feature/astronaut.svg);
 }
 .features-h {
   margin-bottom: 10px;
@@ -250,7 +256,7 @@ img {
 }
 
 .team-box {
-  padding: 30px 0;
+  padding: 30px 0 16px 0;
 }
 .team-name {
   margin-bottom: 10px;
@@ -265,6 +271,31 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--second-color);
+}
+.master-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px 30px 32px;
+
+  outline: 1px solid tomato;
+}
+.master-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+  /* background-color: teal; */
+}
+.master-soc-link:hover {
+  fill: #fff;
+  background-color: var(--brand-color);
+}
+.master-soc-item:not(:last-child):not(:last-child) {
+  margin-right: 10px;
 }
 /* Подвал сайта */
 .foot {
