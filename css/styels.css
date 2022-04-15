@@ -102,15 +102,7 @@ img {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.icon-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
+.contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -123,12 +115,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
-}
-.contact-link:hover .icon-envelope,
-.contact-link:focus .icon-envelope,
-.contact-link:hover .icon-smartphone,
-.contact-link:focus .icon-smartphone {
-  fill: var(--brand-color);
 }
 .contact-link:hover,
 .contact-link:focus,
@@ -195,8 +181,6 @@ img {
   margin-right: 30px;
 }
 .features-icon {
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
