@@ -400,7 +400,8 @@ img {
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.foot-icon-link:hover {
+.foot-icon-link:hover,
+.foot-icon-link:focus {
   background-color: var(--brand-color);
 }
 
@@ -455,8 +456,14 @@ img {
   flex-basis: calc(100% / 3 - var(--card-sed-marg));
   margin-top: var(--card-sed-marg);
   margin-left: var(--card-sed-marg);
-
-  /* outline: 1px solid tomato; */
+}
+.projects-item:hover,
+.projects-item:focus {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-box {
   padding: 20px 24px;
